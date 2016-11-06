@@ -38,6 +38,19 @@ You will need about half of the storage space free to run this script.
 In case you are using a USB stick to copy files between 2 different Macs, make sure the USB drive is partitioned with 'Mac OS Extended (Journaled)' or ExFAT. DO not use MS-DOS (FAT) partitioned USB drive. MS-DOS FAT formatted drive cannot store files bigger than 4G.
 
 
+# What folders are tarred by the script
+In your macOS's home directory are these folders that you normally would want to copy to your new Mac.
+Desktop
+Documents
+Downloads
+Library \*
+Movies
+Music
+Pictures
+Public \*
+Sites \*
+
+
 # How to run script
 
 > In this example, the script was executed on Nov 5, 2016, hence files/folder name is created with '\*\_2016_11_05'.
@@ -60,18 +73,30 @@ In case you are using a USB stick to copy files between 2 different Macs, make s
 
 
 # After copying tar files to new Mac
+
+> On new Mac, I recommend copying the tar files to **~/Downloads/inbox/** or something like it. Even if a mistake is made while extracting the tar files, you won't end up with new files mixed up with other files in wrong directory.
+
 ## Extract the tar files
 Follow 1 of the following 2 steps to extract the tar on the new mac
 
-* In Finder: 
-  * double click on the .tar file to extract it. 
-  * If the tar file is named Documents_backup_2016_11_05.tar, folder Documents_backup_2016_11_05 will be created
-  * The content of Documents_backup_2016_11_05.tar will be extracted into folder Documents_backup_2016_11_05.
-* In Terminal: 
-  * In the same directory Documents_backup_2016_11_05.tar is in, *create a directory (ex: Documents_backup_2016_11_05) to hold extracted files*.
-  * Run command:
-    * ```tar -xf Documents_backup_2016_11_05.tar -C Documents_backup_2016_11_05```
-  * Files will be extracted into the directory Documents_backup_2016_11_05/.
+* In Finder: *all done in GUI environment of Finder*
+  * Go to ~/Downloads/inbox
+  * Double click on the .tar file to extract it. 
+  * If the tar file is named Documents_backup_2016_11_05.tar, folder Documents_backup_2016_11_05 will be created & files will be extracted to that file.
+* In Terminal: *all done in CLI environment in Terminal*
+  * When extracting the tar files in terminal, the destination folder will NOT be created for you. For this reason, you will need to create the destination directory yourself.
+  * In ~/Downloads/inbox, **create a directory (ex: Documents_backup_2016_11_05) to hold extracted files**. Avoid creating 'Documents', but use something like 'Documents-restore' to minimize confusion.
+  ```
+  cd ~/Downloads/inbox
+  mkdir Documents_backup_2016_11_05   
+  ```  
+  * Extract the tar, while specifying the destination direction with -C  (capital letter C):
+    
+      ```
+      tar -xf Documents_backup_2016_11_05.tar -C Documents_backup_2016_11_05
+      ```
+    
+  * The files will be extracted into the directory Documents_backup_2016_11_05/.
   
 
 ## After extracting tar
