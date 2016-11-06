@@ -11,7 +11,7 @@ When you are copying many thousands of small files between storage devices (ex: 
 
 
 # Who
-Anyone who needs to swap out Macs but Migration Assistant or Time Machine backup is not available. 
+Anyone who needs to swap out Macs but Migration Assistant or Time Machine backup is not available. This script would be especially useful for those who need to manage multiple macOS computers.
 
 
 # How
@@ -39,8 +39,23 @@ In case you are using a USB stick to copy files between 2 different Macs, make s
 
 
 # How to run script
-1. Download the script and make it executable.
-1. Run the script to tar each folder in your home directory. If you forgot to export browser bookmarks, exit and rerun the script.
+
+> In this example, the script was executed on Nov 5, 2016, hence files/folder name is created with '\*\_2016_11_05'.
+
+1. Open Terminal. Download the script -> make it executable -> run the script.
+
+  ```
+  cd ~/Downloads    
+  curl -O https://raw.githubusercontent.com/paulcodr/macbackup/master/macbackup.sh
+  chmod 750 ~/Downloads/macbackup.sh
+  ~/Downloads/macbackup.sh
+  ```
+1. The script searches for exported bookmark files from browsers using file names commonly used by Chrome/Firefox/Safari in Documents and Desktop folders (but not the subfolders) of your home directory. If you forgot to export browser bookmarks, answer n to exit script, and export the bookmarks from your browsers. And rerun the script.
+
+  ```
+  ~/Downloads/macbackup.sh
+  ```
+1. Newly created tar files will be all in ~/Desktop/backup_2016_11_05/
 1. Copy tar files to the new laptop, using USB stick or whatever other method.
 
 
