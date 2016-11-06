@@ -46,6 +46,8 @@ In case you are using a USB stick to copy files between 2 different Macs, make s
 
 # After copying tar files to new new Mac
 ## Extract the tar files
+Follow 1 of the following 2 steps to extract the tar on the new mac
+
 * In Finder: 
   * double click on the .tar file to extract it. 
   * If the tar file is named Documents_backup_2016_11_05.tar, folder Documents_backup_2016_11_05 will be created
@@ -56,5 +58,9 @@ In case you are using a USB stick to copy files between 2 different Macs, make s
     * ```tar -xf Documents_backup_2016_11_05.tar -C Documents_backup_2016_11_05```
   * Files will be extracted into the directory Documents_backup_2016_11_05/.
   
-  
-  END
+
+## After extracting tar
+Move extracted files into appropriate folders, such as Documents, Pictures, etc.
+
+
+END
