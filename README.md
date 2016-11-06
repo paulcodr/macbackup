@@ -44,7 +44,7 @@ In case you are using a USB stick to copy files between 2 different Macs, make s
 1. Copy tar files to the new laptop, using USB stick or whatever other method.
 
 
-# After copying tar files to new new Mac
+# After copying tar files to new Mac
 ## Extract the tar files
 Follow 1 of the following 2 steps to extract the tar on the new mac
 
