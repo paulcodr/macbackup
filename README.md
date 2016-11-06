@@ -42,6 +42,8 @@ In case you are using a USB stick to copy files between 2 different Macs, make s
 1. Download the script and make it executable.
 1. Run the script to tar each folder in your home directory. If you forgot to export browser bookmarks, exit and rerun the script.
 1. Copy tar files to the new laptop, using USB stick or whatever other method.
+
+
 # To extract on new Mac, do either of the following.
 * In Finder: 
   * double click on the .tar file to extract it. 
