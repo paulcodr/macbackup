@@ -43,12 +43,12 @@ In case you are using a USB stick to copy files between 2 different Macs, make s
 1. Run the script to tar each folder in your home directory. If you forgot to export browser bookmarks, exit and rerun the script.
 1. Copy tar files to the new laptop, using USB stick or whatever other method.
 1. To extract on new Mac, do either of the following.
- * In Finder: 
-   * double click on the .tar file to extract it. 
-   * If the tar file is named Documents_backup_2016_11_05.tar, folder Documents_backup_2016_11_05 will be created
-   * The content of Documents_backup_2016_11_05.tar will be extracted into folder Documents_backup_2016_11_05.
- * In Terminal: 
-   * In the same directory Documents_backup_2016_11_05.tar is in, create a directory (ex: Documents_backup_2016_11_05) to hold extracted files.
-   * Run command:
-   * ```tar -xf Documents_backup_2016_11_05.tar -C Documents_backup_2016_11_05```
-   * Files will be extracted into the directory Documents_backup_2016_11_05/.
+  * In Finder: 
+    * double click on the .tar file to extract it. 
+    * If the tar file is named Documents_backup_2016_11_05.tar, folder Documents_backup_2016_11_05 will be created
+    * The content of Documents_backup_2016_11_05.tar will be extracted into folder Documents_backup_2016_11_05.
+  * In Terminal: 
+    * In the same directory Documents_backup_2016_11_05.tar is in, create a directory (ex: Documents_backup_2016_11_05) to hold extracted files.
+    * Run command:
+    * ```tar -xf Documents_backup_2016_11_05.tar -C Documents_backup_2016_11_05```
+    * Files will be extracted into the directory Documents_backup_2016_11_05/.
