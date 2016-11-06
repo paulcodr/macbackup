@@ -68,7 +68,7 @@ Follow 1 of the following 2 steps to extract the tar on the new mac
   * If the tar file is named Documents_backup_2016_11_05.tar, folder Documents_backup_2016_11_05 will be created
   * The content of Documents_backup_2016_11_05.tar will be extracted into folder Documents_backup_2016_11_05.
 * In Terminal: 
-  * In the same directory Documents_backup_2016_11_05.tar is in, create a directory (ex: Documents_backup_2016_11_05) to hold extracted files.
+  * In the same directory Documents_backup_2016_11_05.tar is in, *create a directory (ex: Documents_backup_2016_11_05) to hold extracted files*.
   * Run command:
     * ```tar -xf Documents_backup_2016_11_05.tar -C Documents_backup_2016_11_05```
   * Files will be extracted into the directory Documents_backup_2016_11_05/.
