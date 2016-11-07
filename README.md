@@ -1,5 +1,5 @@
 # What
-This shell script tars each folder in your Mac's home directory into a tar file. Useful when you need to switch out your old Mac and only a USB stick is available for copying files between old and new Mac. 
+This shell script tars each folder in your Mac's home directory into a tar file. Useful when you need to switch out your old Mac and only a USB stick is available but not Time Machine backup or Migration Assistant.
 
 
 # Why
